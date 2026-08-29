@@ -1,0 +1,25 @@
+{
+  "name": "youtube-remote",
+  "version": "1.0.0",
+  "description": "Self-hosted YouTube Remote Control for TV / Home Theater with mobile web app",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build:client": "npm --prefix client run build",
+    "build:server": "npm --prefix server run build",
+    "build": "npm run build:client && npm run build:server",
+    "start": "node server/dist/index.js",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev"
+  },
+  "keywords": [
+    "youtube",
+    "remote-control",
+    "home-theater",
+    "pwa",
+    "react",
+    "fastify",
+    "playwright"
+  ],
+  "author": "",
+  "license": "MIT"
+}
