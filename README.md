@@ -1,5 +1,7 @@
-# 🎵 YouTube Remote — Self-Hosted Music & TV Remote
-
+# 🎵 YouTube Remote - Self-Hosted Music & TV Remote
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-
+  badge&logo=youtube&logoColor=white)](https://www.youtube.com/@0xDeploy)
+  
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge" alt="License MIT" />
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue?style=for-the-badge" alt="Cross Platform" />
@@ -28,41 +30,6 @@ YouTube Remote runs on your host computer (Windows, Linux, or macOS) connected d
 
 ---
 
-## 🏛️ Architecture & Data Flow
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│             Mobile Phone / Tablet (PWA Web App)             │
-│   (Search, Queue, Live Volume Deck, Equalizer, Settings)    │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-            WebSocket (Instant 2-way sync) & REST
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│          Host Server (Windows / Linux / macOS) [:4000]      │
-│  • Fastify API & WebSocket Gateway                          │
-│  • SQLite Persistence (Queue, History, Paired Devices)      │
-│  • Multi-Device PIN Authentication                          │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-                     Playwright Controller
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│             Dedicated Chrome / Edge Instance                │
-│  • Native YouTube Web Playback                              │
-│  • Auto-Skip Ads & Auto-Dismiss Dialogs                     │
-│  • 144p Bandwidth Saver & Native Autoplay Enforcement       │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-                    Direct Audio Output
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│            Home Theater / TV / Hi-Fi Speakers               │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
 ## ✨ Features
 
 - 📱 **Mobile-First PWA (iOS & Android)**: Installable as a native-feeling app on iPhone and Android with safe-area support, dark mode, and zero app store downloads.
@@ -83,7 +50,7 @@ YouTube Remote runs on your host computer (Windows, Linux, or macOS) connected d
 ### 🪟 Windows Setup (1-Click)
 1. **Clone the repository**:
    ```cmd
-   git clone https://github.com/your-username/youtube-remote.git
+   git clone https://github.com/c1ph3rxxX/youtube-remote.git
    cd youtube-remote
    ```
 2. **Install & Build**: Double-click `install.bat` (or run `npm run install:all && npm run build`).
@@ -94,7 +61,7 @@ YouTube Remote runs on your host computer (Windows, Linux, or macOS) connected d
 ### 🐧 Linux Setup (Ubuntu / Debian / Raspberry Pi)
 1. **Clone & Install**:
    ```bash
-   git clone https://github.com/your-username/youtube-remote.git
+   git clone https://github.com/c1ph3rxxXyoutube-remote.git
    cd youtube-remote
    npm run install:all
    npm run build
@@ -126,7 +93,7 @@ loginctl enable-linger $USER
 ### 🍎 macOS Setup
 1. **Clone & Install**:
    ```bash
-   git clone https://github.com/your-username/youtube-remote.git
+   git clone https://github.com/c1ph3rxxX/youtube-remote.git
    cd youtube-remote
    npm run install:all
    npm run build
@@ -172,14 +139,14 @@ PAIRING_TIMEOUT_MS=86400000
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Frontend**: React 18, TypeScript, Tailwind CSS, Zustand, Lucide Icons, Vite PWA.
-- **Backend**: Node.js, Fastify, WebSocket (`ws`), Better-SQLite3, Innertube / YouTubei.js.
-- **Automation Engine**: Playwright (Persistent Context Chrome controller with stealth injection).
-
----
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 👤 Author & Support
+
+    - 📺 **YouTube**: [Subscribe to my Channel](https://www.youtube.com/@0xDeploy)
+    - ⭐ If you found this project helpful, please give it a star on GitHub!
+
