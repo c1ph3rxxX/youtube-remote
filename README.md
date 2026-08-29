@@ -1,4 +1,4 @@
-# 🎵 YouTube Remote — Self-Hosted Music & TV Remote
+# 🎵 YouTube Remote - Self-Hosted Music & TV Remote
 
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge" alt="License MIT" />
